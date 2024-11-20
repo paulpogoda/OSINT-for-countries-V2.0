@@ -1,6 +1,5 @@
-# OSINT Resources by Country V 2.0
-This repo was inspired by wddadk [OSINT for Countries](https://github.com/wddadk/OSINT-for-countries). Here you'll find a collection of links to various OSINT tools, websites, and projects that are specific to different countries. 
-Structured for digital profilers. What does it mean: 
+# OSINT Resources/Tools by Country V 2.0
+This project was inspired by wddadk [OSINT for Countries](https://github.com/wddadk/OSINT-for-countries). Here you'll find a collection of links to various OSINT tools, websites, and projects that are specific to different countries, structured for digital profilers. What does it mean: 
 On each country page you will find tools and resources grouped by one standard: 
 - open bases, statistics
 - search for legal and tax information
