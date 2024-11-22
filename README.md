@@ -2,19 +2,18 @@
 This project was inspired by wddadk [OSINT for Countries](https://github.com/wddadk/OSINT-for-countries). Here you'll find a collection of links to various OSINT tools, websites, and projects that are specific to different countries, structured for digital profilers. What does it mean: 
 On each country page you will find tools and resources grouped by one standard: 
 - open bases, statistics
-- search for legal and tax information
+- search for names, legal and tax information
 - maps and cadastres
 - cars and license plates
 - telephones and other personal identifiers
 - public procurement
 - WHOIS
 
-Example of standard repo: [Uzbekistan](https://github.com/paulpogoda/OSINT-Tools-Uzbekistan) 
+## Contributing
+You can create your own repo with the same standard, and I will include it in the list. Examples of standard repo: [Kazakhstan](https://github.com/paulpogoda/OSINT-Tools-Kazakhstan), [China]() If you have more OSINT resources to add to existing country repos, feel free to submit a pull request at thr repo's page. 
 
 ## Table of Contents
 
-- [Albania]()
-- [Argentina]()
 - [Australia]()
 - [Belgium]()
 - [Brazil]()
@@ -57,6 +56,3 @@ Example of standard repo: [Uzbekistan](https://github.com/paulpogoda/OSINT-Tools
 - [HBG Asia/Pacific](https://start.me/p/3KMwaw/hbg-asia-pacific-prospect-research-resources) - Asia/Pacific research resources
 - [HBG North America](https://start.me/p/ZQdorV/hbg-north-america-prospect-research-links) - North America research resources
 - [HBG Middle East](https://start.me/p/ZYaxaJ/hbg-middle-east-prospect-research-links) - Middle East research resources
-
-## Contributing
-If you have more OSINT resources to add, feel free to fork a specific country repository and submit a pull request. Or you can create your own repo wit the same standard, and I will include it in the list. Example: [Kazakhstan](https://github.com/paulpogoda/OSINT-Tools-Kazakhstan)
