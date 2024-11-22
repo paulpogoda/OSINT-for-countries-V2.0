@@ -9,6 +9,8 @@ On each country page you will find tools and resources grouped by one standard:
 - public procurement
 - WHOIS
 
+Example of standard repo: [Uzbekistan](https://github.com/paulpogoda/OSINT-Tools-Uzbekistan) 
+
 ## Table of Contents
 
 - [Albania]()
@@ -56,7 +58,5 @@ On each country page you will find tools and resources grouped by one standard:
 - [HBG North America](https://start.me/p/ZQdorV/hbg-north-america-prospect-research-links) - North America research resources
 - [HBG Middle East](https://start.me/p/ZYaxaJ/hbg-middle-east-prospect-research-links) - Middle East research resources
 
----
-
 ## Contributing
-If you have more OSINT resources to add, feel free to fork country repositories and submit a pull request. Please ensure that the resources you're adding are relevant and specific to the country.
+If you have more OSINT resources to add, feel free to fork a specific country repository and submit a pull request. Or you can create your own repo wit the same standard, and I will include it in the list. Example: [Kazakhstan](https://github.com/paulpogoda/OSINT-Tools-Kazakhstan)
