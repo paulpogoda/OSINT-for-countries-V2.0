@@ -1,5 +1,5 @@
 # OSINT Resources/Tools by Country V 2.0
-This project was inspired by wddadk [OSINT for Countries](https://github.com/wddadk/OSINT-for-countries). Here you'll find a collection of links to various OSINT tools, websites, and projects that are specific to different countries, structured for digital profilers. What does it mean: 
+This project was inspired by wddadk [OSINT for Countries](https://github.com/wddadk/OSINT-for-countries). Here you'll find a GitHub-based collection of links to various OSINT tools, websites, and projects that are specific to different countries, structured for digital profilers. What does it mean: 
 On each country repo you will find tools and resources grouped by one standard: 
 - open bases, statistics
 - search for names, legal and tax information
@@ -10,39 +10,42 @@ On each country repo you will find tools and resources grouped by one standard:
 - WHOIS
 
 ## Contributing
-You can create your own repo with the same standard, and I will include it in the list. Examples of standard repo: [Kazakhstan](https://github.com/paulpogoda/OSINT-Tools-Kazakhstan), [China]() If you have more OSINT resources to add to existing country repos, feel free to submit a pull request at the repo's page. 
+Feel free to join! You can create your own repo with the same standard, and I will include it in the list. Examples of standard repo: [Kazakhstan](https://github.com/paulpogoda/OSINT-Tools-Kazakhstan), [United Arab Emirates](https://github.com/paulpogoda/OSINT-Tools-Emirates). Please add an issue if you are already started to work on new standartized repo for this project, add a pull request to contribute. If you have more OSINT resources to add to existing country repos, feel free to submit a pull request at the repo's page. 
+Feel free to join in! Otherwise I'll have to finish this repository for a few months. 
+## What is already done?
+See the Table of Contents 
+## In Progress by Pogoda
+China, Estonia, Russia
 
 ## Table of Contents
-
-- [Australia]()
-- [Belgium]()
-- [Brazil]()
-- [Bulgaria]()
-- [Canada](#canada)
-- [China](#china)
-- [Colombia](#colombia)
-- [Czechia](#czechia)
-- [Hungary](#hungary)
-- [India](#india)
-- [Iran](#iran)
-- [Israel](#israel)
-- [Japan](#japan)
+- A
+- B
+- C
+- D
+- E
+- F
+- G
+- H
+- I
+- J
 - [Kazakhstan](https://github.com/paulpogoda/OSINT-Tools-Kazakhstan)
 - [Kyrgyzstan](https://github.com/paulpogoda/OSINT-Tools-Kyrgyzstan)
-- [Malaysia]()
-- [Mexico]()
-- [Netherlands]()
-- [New Zealand]()
-- [Poland]()
-- [Russia]()
-- [South Africa]()
-- [South Korea]()
+- L
+- M
+- N
+- O
+- P
+- Q
+- R
+- S
 - [Tajikistan](https://github.com/paulpogoda/OSINT-Tools-Tajikistan)
-- [Thailand]()
 - [United Arab Emirates](https://github.com/paulpogoda/OSINT-Tools-Emirates)
-- [United Kingdom]()
-- [USA]()
 - [Uzbekistan](https://github.com/paulpogoda/OSINT-Tools-Uzbekistan)
+- V
+- W
+- X
+- Y
+- Z
 
 ## Resources containing multi-country links
 - [OSINT Map](https://cybdetective.com/osintmap/) - Worldwide map of OSINT tools
