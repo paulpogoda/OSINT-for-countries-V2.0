@@ -10,7 +10,7 @@ On each country repo you will find tools and resources grouped by one standard:
 - WHOIS
 
 ## Contributing
-You can create your own repo with the same standard, and I will include it in the list. Examples of standard repo: [Kazakhstan](https://github.com/paulpogoda/OSINT-Tools-Kazakhstan), [China]() If you have more OSINT resources to add to existing country repos, feel free to submit a pull request at thr repo's page. 
+You can create your own repo with the same standard, and I will include it in the list. Examples of standard repo: [Kazakhstan](https://github.com/paulpogoda/OSINT-Tools-Kazakhstan), [China]() If you have more OSINT resources to add to existing country repos, feel free to submit a pull request at the repo's page. 
 
 ## Table of Contents
 
@@ -39,6 +39,7 @@ You can create your own repo with the same standard, and I will include it in th
 - [South Korea]()
 - [Tajikistan](https://github.com/paulpogoda/OSINT-Tools-Tajikistan)
 - [Thailand]()
+- [United Arab Emirates](https://github.com/paulpogoda/OSINT-Tools-Emirates)
 - [United Kingdom]()
 - [USA]()
 - [Uzbekistan](https://github.com/paulpogoda/OSINT-Tools-Uzbekistan)
