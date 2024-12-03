@@ -5,7 +5,7 @@ On each country repo you will find tools and resources grouped by one standard:
 - search for names, legal and tax information
 - maps and cadastres
 - cars and license plates
-- telephones and other personal identifiers
+- people: telephones and other personal identifiers
 - public procurement
 - WHOIS
 
@@ -29,7 +29,7 @@ China, Estonia, Russia
 - J
 - [Kazakhstan](https://github.com/paulpogoda/OSINT-Tools-Kazakhstan)
 - [Kyrgyzstan](https://github.com/paulpogoda/OSINT-Tools-Kyrgyzstan)
-- L
+- [Israel](https://github.com/paulpogoda/OSINT-Tools-Israel)
 - M
 - N
 - O
