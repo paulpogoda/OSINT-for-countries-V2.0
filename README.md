@@ -19,7 +19,7 @@ China, Estonia, Russia
 
 ## Table of Contents
 - A
-- B
+- [Bulgaria](https://github.com/paulpogoda/OSINT-Tools-Bulgaria/tree/main)
 - C
 - D
 - E
