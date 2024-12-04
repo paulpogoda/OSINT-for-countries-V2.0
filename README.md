@@ -18,11 +18,13 @@ See the Table of Contents
 China, Estonia, Russia
 
 ## Table of Contents
-- A
+- [Armenia](). IN PROGRESS
+- [Azerbaijan](). IN PROGRESS
 - [Bulgaria](https://github.com/paulpogoda/OSINT-Tools-Bulgaria/tree/main)
 - C
+- [China](). IN PROGRESS
 - D
-- E
+- [Estonia](). IN PROGRESS
 - F
 - G
 - H
@@ -36,7 +38,7 @@ China, Estonia, Russia
 - O
 - P
 - Q
-- R
+- [Russia](https://github.com/paulpogoda/OSINT-Tools-Russia) IN PROGRESS
 - S
 - [Tajikistan](https://github.com/paulpogoda/OSINT-Tools-Tajikistan)
 - [United Arab Emirates](https://github.com/paulpogoda/OSINT-Tools-Emirates)
