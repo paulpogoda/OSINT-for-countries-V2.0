@@ -1,12 +1,12 @@
 # OSINT Resources/Tools by Country V 2.0
 This project was inspired by @wddadk [OSINT for Countries](https://github.com/wddadk/OSINT-for-countries). Here you'll find a GitHub-based collection of links to various OSINT tools, websites, and projects that are specific to different countries, structured for fact-checkers and digital profilers. 
-## What does it mean: 
+## What does it mean 
 **On each country repo you will find tools and resources grouped by one standard:** 
 - open bases, statistics
-- search for names, legal and tax information
+- search for legal and tax information
 - maps and cadastres
 - cars and license plates
-- people: telephones and other personal identifiers
+- people: names, public docements, social, telephones and other personal identifiers
 - public procurement
 - WHOIS
 
@@ -14,7 +14,7 @@ This project was inspired by @wddadk [OSINT for Countries](https://github.com/wd
 Feel free to join in! Otherwise I'll have to finish this repository for a few months. You can create your own repo with the same standard, and I will include it in the list. Examples of standard repo: [Kazakhstan](https://github.com/paulpogoda/OSINT-Tools-Kazakhstan), [United Arab Emirates](https://github.com/paulpogoda/OSINT-Tools-Emirates). Please use the [Country Template](https://github.com/paulpogoda/OSINT-for-countries-V2.0/blob/main/Country%20Template) to work on new standartized repo for this project, add a pull request to contribute. If you have more OSINT resources to add to existing country repos, feel free to submit a pull request at the repo's page. 
 ## What is already done?
 See the Table of Contents 
-## In Progress by Pogoda
+### In Progress by Pogoda
 China, Estonia, Russia, Iran
 
 ## Table of Contents
