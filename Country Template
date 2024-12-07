@@ -10,6 +10,7 @@ A list of OSINT tools that may be useful to you when conducting investigations r
  - [People, phones, social etc.](#people)
  - [Public procurements](#public-procurement)
  - [WHOIS](#whois)
+ - [Appendix](#appendix) # Add it only if you really have to
 
 ## Open Data portals
 (Country Open Data, Stock Exchange, Courts)
@@ -24,12 +25,18 @@ A list of OSINT tools that may be useful to you when conducting investigations r
 
 ## Vehicles
 - [Entity 1. 2 etc.]
+
 ## People 
 (Names, Addresses, Yellow Pages, White Pages etc.)
 - [Entity 1. 2 etc.]
+
 ## Public procurement
 - [Entity 1. 2 etc.]
+
 ## WHOIS
 - [Entity 1. 2 etc.]
+
+## Appendix
+
 ## Contributions
 Fell free to join to this project — [OSINT For Countries V2.0](https://github.com/paulpogoda/OSINT-for-countries-V2.0)
