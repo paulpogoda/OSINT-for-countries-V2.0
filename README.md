@@ -15,7 +15,7 @@ Feel free to join in! Otherwise I'll have to finish this repository for a few mo
 ## What is already done?
 See the Table of Contents 
 ### In Progress by Pogoda
-China, Estonia, Russia, Iran
+Estonia, Russia, Azerbaijan
 
 ## Table of Contents
 - [Armenia](https://github.com/paulpogoda/OSINT-Tools-Armenia/)
