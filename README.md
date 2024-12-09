@@ -6,7 +6,7 @@ This project was inspired by @wddadk [OSINT for Countries](https://github.com/wd
 - search for legal and tax information
 - maps and cadastres
 - cars and license plates
-- people: names, public docements, social, telephones and other personal identifiers
+- people: names, public documents, social accounts, telephones and other personal identifiers
 - public procurement
 - WHOIS
 
