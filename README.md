@@ -18,7 +18,7 @@ See the Table of Contents
 China, Estonia, Russia, Iran
 
 ## Table of Contents
-- [Armenia](). IN PROGRESS
+- [Armenia](https://github.com/paulpogoda/OSINT-Tools-Armenia/)
 - [Australia](https://github.com/paulpogoda/OSINT-Tools-Australia/blob/main/README.md)
 - [Azerbaijan](). IN PROGRESS
 - [Bulgaria](https://github.com/paulpogoda/OSINT-Tools-Bulgaria/tree/main)
