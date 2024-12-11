@@ -8,7 +8,7 @@ Fell free to join to this project — [OSINT For Countries V2.0](https://github.
 ## Table of content:
  - [Open Data portals](#open-data-portals)
  - [Legal Entities](#legal-entities)
- - [Cadastral Maps](#maps)
+ - [Cadastral and other Maps](#maps)
  - [Vehicles](#vehicles)
  - [People, phones, social etc.](#people)
  - [Public procurements](#public-procurement)
