@@ -22,7 +22,6 @@ Estonia, Russia, Taiwan
 - [Australia](https://github.com/paulpogoda/OSINT-Tools-Australia/)
 - [Azerbaijan](https://github.com/paulpogoda/OSINT-Tools-Azerbaijan/)
 - [Bulgaria](https://github.com/paulpogoda/OSINT-Tools-Bulgaria/tree/main)
-- C
 - [China](https://github.com/paulpogoda/OSINT-Tools-China)
 - D
 - [Estonia](). IN PROGRESS
@@ -41,7 +40,7 @@ Estonia, Russia, Taiwan
 - P
 - Q
 - [Russia](https://github.com/paulpogoda/OSINT-Tools-Russia) IN PROGRESS
-- S
+- [Syria](https://github.com/paulpogoda/OSINT-Tools-Syria)
 - [Tajikistan](https://github.com/paulpogoda/OSINT-Tools-Tajikistan)
 - [United Arab Emirates](https://github.com/paulpogoda/OSINT-Tools-Emirates)
 - [Uzbekistan](https://github.com/paulpogoda/OSINT-Tools-Uzbekistan)
