@@ -15,8 +15,6 @@
 Feel free to join in! Otherwise I'll have to finish this repository for a few months. You can create your own repo with the same standard, and I will include it in the list. Examples of standard repo: [Kazakhstan](https://github.com/paulpogoda/OSINT-Tools-Kazakhstan), [United Arab Emirates](https://github.com/paulpogoda/OSINT-Tools-Emirates). Please use the [Country Template](https://github.com/paulpogoda/OSINT-for-countries-V2.0/blob/main/Country%20Template) to work on new standartized repo for this project, add a pull request to contribute. If you have more OSINT resources to add to existing country repos, feel free to submit a pull request at the repo's page. 
 ## What is already done?
 See the Table of Contents 
-### In Progress by Pogoda
-Estonia, Russia, Taiwan
 
 ## Table of Contents
 - [Armenia](https://github.com/paulpogoda/OSINT-Tools-Armenia/)
@@ -30,15 +28,16 @@ Estonia, Russia, Taiwan
 - G
 - H
 - [Iran](https://github.com/paulpogoda/OSINT-Tools-Iran)
+- [Israel](https://github.com/paulpogoda/OSINT-Tools-Israel)
 - J
 - [Kazakhstan](https://github.com/paulpogoda/OSINT-Tools-Kazakhstan)
 - [Kyrgyzstan](https://github.com/paulpogoda/OSINT-Tools-Kyrgyzstan)
-- [Israel](https://github.com/paulpogoda/OSINT-Tools-Israel)
+- L
 - M
 - [Netherlands](https://github.com/paulpogoda/OSINT-Tools-Netherlands/tree/master)
 - [North Korea]() IN PROGRESS 
 - O
-- P
+- [Poland](). IN PROGRESS
 - Q
 - [Russia](https://github.com/paulpogoda/OSINT-Tools-Russia) IN PROGRESS
 - [Syria](https://github.com/paulpogoda/OSINT-Tools-Syria)
