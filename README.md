@@ -1,5 +1,6 @@
 # OSINT Resources/Tools by Country V 2.0
-This project was inspired by @wddadk [OSINT for Countries](https://github.com/wddadk/OSINT-for-countries). Here you'll find a GitHub-based collection of links to various OSINT tools, websites, and projects that are specific to different countries, structured for fact-checkers and digital profilers. 
+![OFCCover](https://github.com/user-attachments/assets/24e9a122-d9a8-4ff9-81b7-298c5f0a739b)
+### This project was inspired by @wddadk [OSINT for Countries](https://github.com/wddadk/OSINT-for-countries). Here you'll find a GitHub-based collection of links to various OSINT tools, websites, and projects that are specific to different countries, structured for fact-checkers and digital profilers. 
 ## What does it mean 
 **On each country repo you will find tools and resources grouped by one standard:** 
 - open bases, statistics
