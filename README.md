@@ -20,6 +20,7 @@ See the Table of Contents
 - [Armenia](https://github.com/paulpogoda/OSINT-Tools-Armenia/)
 - [Australia](https://github.com/paulpogoda/OSINT-Tools-Australia/)
 - [Azerbaijan](https://github.com/paulpogoda/OSINT-Tools-Azerbaijan/)
+- [Belarus](https://github.com/int-sector/OSINT-Tools-Belarus/)
 - [Bulgaria](https://github.com/paulpogoda/OSINT-Tools-Bulgaria/tree/main)
 - [China](https://github.com/paulpogoda/OSINT-Tools-China)
 - D
