@@ -38,7 +38,7 @@ See the Table of Contents
 - [Netherlands](https://github.com/paulpogoda/OSINT-Tools-Netherlands/tree/master)
 - [North Korea]() IN PROGRESS 
 - O
-- [Poland](https://github.com/paulpogoda/OSINT-Tools-Poland/blob/main/README.md)
+- [Poland](https://github.com/paulpogoda/OSINT-Tools-Poland)
 - Q
 - [Russia](https://github.com/paulpogoda/OSINT-Tools-Russia) IN PROGRESS
 - [Syria](https://github.com/paulpogoda/OSINT-Tools-Syria)
