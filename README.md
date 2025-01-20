@@ -42,6 +42,7 @@ See the Table of Contents
 - Q
 - [Russia](https://github.com/paulpogoda/OSINT-Tools-Russia) IN PROGRESS
 - [Syria](https://github.com/paulpogoda/OSINT-Tools-Syria)
+- [Taiwan](https://github.com/paulpogoda/OSINT-Tools-Taiwan)
 - [Tajikistan](https://github.com/paulpogoda/OSINT-Tools-Tajikistan)
 - [United Arab Emirates](https://github.com/paulpogoda/OSINT-Tools-Emirates)
 - [United Kingdom](https://github.com/paulpogoda/OSINT-Tools-UK)
