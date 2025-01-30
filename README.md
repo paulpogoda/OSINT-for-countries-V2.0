@@ -28,6 +28,7 @@ See the Table of Contents
 - F
 - G
 - H
+- [India](https://github.com/paulpogoda/OSINT-Tools-India)
 - [Iran](https://github.com/paulpogoda/OSINT-Tools-Iran)
 - [Israel](https://github.com/paulpogoda/OSINT-Tools-Israel)
 - J
