@@ -25,7 +25,7 @@ See the Table of Contents
 - [China](https://github.com/paulpogoda/OSINT-Tools-China)
 - D
 - [Estonia](). IN PROGRESS
-- F
+- [France](https://github.com/Aegyr21/OSINT-Tools-France/)
 - G
 - H
 - [India](https://github.com/paulpogoda/OSINT-Tools-India)
