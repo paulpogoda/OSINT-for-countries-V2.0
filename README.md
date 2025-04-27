@@ -26,7 +26,7 @@ See the Table of Contents
 - [Bulgaria](https://github.com/paulpogoda/OSINT-Tools-Bulgaria/tree/main)
 - [China](https://github.com/paulpogoda/OSINT-Tools-China)
 - D
-- [Estonia](). IN PROGRESS
+- [Estonia](https://github.com/paulpogoda/OSINT-Tools-Estonia)
 - [France](https://github.com/Aegyr21/OSINT-Tools-France/)
 - G
 - H
