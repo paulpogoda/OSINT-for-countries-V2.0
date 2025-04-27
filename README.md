@@ -37,6 +37,7 @@ See the Table of Contents
 - [Kazakhstan](https://github.com/paulpogoda/OSINT-Tools-Kazakhstan)
 - [Kyrgyzstan](https://github.com/paulpogoda/OSINT-Tools-Kyrgyzstan)
 - L
+- [Latvia](https://github.com/paulpogoda/OSINT-Tools-Latvia)
 - M
 - [Netherlands](https://github.com/paulpogoda/OSINT-Tools-Netherlands/tree/master)
 - [North Korea]() IN PROGRESS 
