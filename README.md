@@ -19,58 +19,31 @@ Feel free to join in! Otherwise I'll have to finish this repository for a few mo
 See the Table of Contents 
 
 ## Table of Contents
-A
 - [Armenia](https://github.com/paulpogoda/OSINT-Tools-Armenia/)
 - [Australia](https://github.com/paulpogoda/OSINT-Tools-Australia/)
 - [Azerbaijan](https://github.com/paulpogoda/OSINT-Tools-Azerbaijan/)
-B
 - [Belarus](https://github.com/int-sector/OSINT-Tools-Belarus/)
 - [Bulgaria](https://github.com/paulpogoda/OSINT-Tools-Bulgaria/tree/main)
-C
 - [China](https://github.com/paulpogoda/OSINT-Tools-China)
-D
-E
 - [Estonia](https://github.com/paulpogoda/OSINT-Tools-Estonia)
 - [France](https://github.com/Aegyr21/OSINT-Tools-France/)
-F
-G
-H
-I
 - [India](https://github.com/paulpogoda/OSINT-Tools-India)
 - [Iran](https://github.com/paulpogoda/OSINT-Tools-Iran)
 - [Israel](https://github.com/paulpogoda/OSINT-Tools-Israel)
-J
-K
 - [Kazakhstan](https://github.com/paulpogoda/OSINT-Tools-Kazakhstan)
 - [Kyrgyzstan](https://github.com/paulpogoda/OSINT-Tools-Kyrgyzstan)
-L
 - [Latvia](https://github.com/paulpogoda/OSINT-Tools-Latvia)
 - [Lithuania](https://github.com/paulpogoda/OSINT-Tools-Lithuania)
-M
-N
 - [Netherlands](https://github.com/paulpogoda/OSINT-Tools-Netherlands/tree/master)
 - [North Korea]() IN PROGRESS 
-O
-P
 - [Poland](https://github.com/paulpogoda/OSINT-Tools-Poland)
-Q
-R
 - [Russia](https://github.com/paulpogoda/OSINT-Tools-Russia)
-S
 - [Syria](https://github.com/paulpogoda/OSINT-Tools-Syria)
-T
 - [Taiwan](https://github.com/paulpogoda/OSINT-Tools-Taiwan)
 - [Tajikistan](https://github.com/paulpogoda/OSINT-Tools-Tajikistan)
-U
 - [United Arab Emirates](https://github.com/paulpogoda/OSINT-Tools-Emirates)
 - [United Kingdom](https://github.com/paulpogoda/OSINT-Tools-UK)
 - [Uzbekistan](https://github.com/paulpogoda/OSINT-Tools-Uzbekistan)
-V
-W
-X
-Y
-Z
-
 
 ## Resources containing multi-country links
 - [OSINT Map](https://cybdetective.com/osintmap/) - Worldwide map of OSINT tools
