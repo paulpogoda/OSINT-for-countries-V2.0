@@ -38,6 +38,7 @@ See the Table of Contents
 - [North Korea](https://github.com/paulpogoda/OSINT-Tools-North-Korea)
 - [Poland](https://github.com/paulpogoda/OSINT-Tools-Poland)
 - [Russia](https://github.com/paulpogoda/OSINT-Tools-Russia)
+- [Saudi Arabia](https://github.com/paulpogoda/OSINT-Tools-Saudi-Arabia)
 - [Syria](https://github.com/paulpogoda/OSINT-Tools-Syria)
 - [Taiwan](https://github.com/paulpogoda/OSINT-Tools-Taiwan)
 - [Tajikistan](https://github.com/paulpogoda/OSINT-Tools-Tajikistan)
