@@ -30,6 +30,7 @@ See the Table of Contents
 - [France](https://github.com/Aegyr21/OSINT-Tools-France/)
 - [India](https://github.com/paulpogoda/OSINT-Tools-India)
 - [Iran](https://github.com/paulpogoda/OSINT-Tools-Iran)
+- [Iraq](https://github.com/paulpogoda/OSINT-Tools-Iraq)
 - [Israel](https://github.com/paulpogoda/OSINT-Tools-Israel)
 - [Kazakhstan](https://github.com/paulpogoda/OSINT-Tools-Kazakhstan)
 - [Kyrgyzstan](https://github.com/paulpogoda/OSINT-Tools-Kyrgyzstan)
