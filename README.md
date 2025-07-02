@@ -22,7 +22,7 @@ See the Table of Contents
 - [Armenia](https://github.com/paulpogoda/OSINT-Tools-Armenia/)
 - [Australia](https://github.com/paulpogoda/OSINT-Tools-Australia/)
 - [Azerbaijan](https://github.com/paulpogoda/OSINT-Tools-Azerbaijan/)
-- [Bangladesh](https://github.com/seotausif/OSINT-Tools-Bangladesh) by Tausiff Akbar | [Forked by Pogoda](https://github.com/paulpogoda/OSINT-Tools-Bangladesh)
+- [Bangladesh](https://github.com/seotausif/OSINT-Tools-Bangladesh) by Tausif Akbar | [Forked and updated by Pogoda](https://github.com/paulpogoda/OSINT-Tools-Bangladesh)
 - [Belarus](https://github.com/paulpogoda/OSINT-Tools-Belarus)
 - [Brazil](https://github.com/bgmello/OSINT-Tools-Brazil/) by Bruno Görresen Mello
 - [Bulgaria](https://github.com/paulpogoda/OSINT-Tools-Bulgaria/tree/main)
