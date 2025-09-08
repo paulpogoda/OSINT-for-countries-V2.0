@@ -2,7 +2,8 @@
 
 ![image](https://github.com/user-attachments/assets/a331f7af-2882-455d-8304-5fe8a55af76b)
 
-### This project was inspired by @wddadk [OSINT for Countries](https://github.com/wddadk/OSINT-for-countries). Here you'll find a GitHub-based collection of links to various OSINT tools, websites, and projects that are specific to different countries, structured for fact-checkers and digital profilers. Of course there are a lot of other OSINT collections, but most of them are outdated and abandoned. The project objective is to create a community driven, manually tested, standardized collection on GitHub. Thanks Henk van Ess for the [page based on this repo](https://digitaldigging.org/osint/) on his website (you can see it on the picture above). 
+**This project was inspired by @wddadk [OSINT for Countries](https://github.com/wddadk/OSINT-for-countries). Here you'll find a GitHub-based collection of links to various OSINT tools, websites, and projects that are specific to different countries, structured for fact-checkers and digital profilers. Of course there are a lot of other OSINT collections, but most of them are outdated and abandoned. The project objective is to create a community driven, manually tested, standardized collection on GitHub. Thanks Henk van Ess for the [page based on this repo](https://digitaldigging.org/osint/) on his website (you can see it on the picture above).**
+
 ## What does "standardized collection" mean 
 **On each country repo you will find tools and resources grouped by one standard:** 
 - open bases, statistics
