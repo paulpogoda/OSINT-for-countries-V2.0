@@ -27,6 +27,7 @@ See the Table of Contents
 - [Brazil](https://github.com/bgmello/OSINT-Tools-Brazil/) by Bruno Görresen Mello
 - [Bulgaria](https://github.com/paulpogoda/OSINT-Tools-Bulgaria/tree/main)
 - [China](https://github.com/paulpogoda/OSINT-Tools-China)
+- [Cuba](https://github.com/paulpogoda/osint-tools-cuba/tree/main)
 - [Estonia](https://github.com/paulpogoda/OSINT-Tools-Estonia)
 - [France](https://github.com/Aegyr21/OSINT-Tools-France/)
 - [India](https://github.com/paulpogoda/OSINT-Tools-India)
