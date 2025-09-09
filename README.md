@@ -49,6 +49,7 @@ See the Table of Contents
 - [Tajikistan](https://github.com/paulpogoda/OSINT-Tools-Tajikistan)
 - [United Arab Emirates](https://github.com/paulpogoda/OSINT-Tools-Emirates)
 - [United Kingdom](https://github.com/paulpogoda/OSINT-Tools-UK)
+- [United States of America](https://github.com/paulpogoda/OSINT-Tools_USA)
 - [Uzbekistan](https://github.com/paulpogoda/OSINT-Tools-Uzbekistan)
 
 ## Resources containing multi-country links
