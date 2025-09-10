@@ -65,3 +65,28 @@ See the Table of Contents
 - [HBG Asia/Pacific](https://start.me/p/3KMwaw/hbg-asia-pacific-prospect-research-resources) - Asia/Pacific research resources
 - [HBG North America](https://start.me/p/ZQdorV/hbg-north-america-prospect-research-links) - North America research resources
 - [HBG Middle East](https://start.me/p/ZYaxaJ/hbg-middle-east-prospect-research-links) - Middle East research resources
+
+---
+
+## Contributing
+
+To contribute to this repository:
+1. Verify all links are working and accessible
+2. Provide accurate descriptions of database contents
+3. Follow the 7-category structure
+4. Include official government sources when available
+5. Submit pull requests with detailed change descriptions
+
+## Legal Disclaimer
+
+This repository is for educational and legitimate investigative purposes only. Users are responsible for:
+- Complying with all applicable laws and regulations
+- Respecting terms of service for all databases and tools
+- Using information ethically and responsibly
+- Obtaining proper authorization when required
+
+The information provided is for informational purposes only and should not be considered legal advice.
+
+---
+
+**Repository maintained by the OSINT-for-Countries-V2.0 community**
