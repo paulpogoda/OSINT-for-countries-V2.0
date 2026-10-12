@@ -10,16 +10,14 @@
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue?style=flat-square)](LICENSE)
 [![Countries](https://img.shields.io/badge/Countries-39-orange?style=flat-square)](#table-of-contents)
 [![Categories](https://img.shields.io/badge/Categories%20per%20country-7-purple?style=flat-square)](#what-does-standardized-collection-mean)
-[![Community Driven](https://img.shields.io/badge/Community-Driven-brightgreen?style=flat-square)](CONTRIBUTING.md)
+[![Community Driven](https://img.shields.io/badge/Community-Driven-brightgreen?style=flat-square)](#contributing)
 
 **📊 39 countries · 7 categories per country · Community-driven**
 
 [About](#about) · [Standard](#what-does-standardized-collection-mean) · [Countries](#table-of-contents) · [Multi-country Resources](#resources-containing-multi-country-links) · [Contributing](#contributing) · [Legal](#legal-disclaimer)
 
-</div>
-
 ---
-> 🗓️ **Last revisited and updated:** Sept 27, 2026
+> 🗓️ **Last revisited and updated:** 2026-09-27
 ---
 
 ## About
@@ -45,7 +43,7 @@ On each country repository you will find tools and resources grouped by **one un
 | 1 | 🗂 Open databases & statistics |
 | 2 | ⚖️ Legal and tax information search |
 | 3 | 🗺 Maps and cadastres |
-| 4 | 🚗 Cars and license plates |
+| 4 | 🚗 Vehicles: land, maritime, aviation |
 | 5 | 👤 People: names, public documents, social accounts, phones and other personal identifiers |
 | 6 | 📋 Public procurement |
 | 7 | 🌐 WHOIS |
@@ -98,9 +96,9 @@ On each country repository you will find tools and resources grouped by **one un
 | 🇵🇱 [Poland](https://github.com/paulpogoda/OSINT-Tools-Poland) | @paulpogoda | ✅ Active |
 | 🇷🇺 [Russia](https://github.com/paulpogoda/OSINT-Tools-Russia) | @paulpogoda | ✅ Active |
 | 🇸🇦 [Saudi Arabia](https://github.com/paulpogoda/OSINT-Tools-Saudi-Arabia) | @paulpogoda | ✅ Active |
-| 🇪🇸 [Spain](https://github.com/Provereno-Media/OSINT-Tools-Spain) | @provereno-media | ✅ Active |
 | 🇷🇸 [Serbia](https://github.com/Provereno-Media/OSINT-Tools-Serbia) | @provereno-media | 🚧 Draft |
-| 🇸🇦 [Switzerland](https://github.com/Provereno-Media/OSINT-Tools-Switzerland) | @provereno-media | ✅ Active |
+| 🇪🇸 [Spain](https://github.com/Provereno-Media/OSINT-Tools-Spain) | @provereno-media | ✅ Active |
+| 🇨🇭 [Switzerland](https://github.com/Provereno-Media/OSINT-Tools-Switzerland) | @provereno-media | ✅ Active |
 | 🇸🇾 [Syria](https://github.com/paulpogoda/OSINT-Tools-Syria) | @paulpogoda | ✅ Active |
 | 🇹🇼 [Taiwan](https://github.com/paulpogoda/OSINT-Tools-Taiwan) | @paulpogoda | ✅ Active |
 | 🇹🇯 [Tajikistan](https://github.com/paulpogoda/OSINT-Tools-Tajikistan) | @paulpogoda | ✅ Active |
