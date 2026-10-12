@@ -19,7 +19,7 @@
 [About](#about) · [Standard](#what-does-standardized-collection-mean) · [Countries](#table-of-contents) · [Multi-country Resources](#resources-containing-multi-country-links) · [Contributing](#contributing) · [Legal](#legal-disclaimer)
 
 ---
-> 🗓️ **Last revisited and updated:** 2026-09-27
+> 🗓️ **Last revisited and updated:** 2026-10-12
 ---
 
 ## About
@@ -72,12 +72,14 @@ On each country repository you will find tools and resources grouped by **one un
 | 🇧🇷 [Brazil](https://github.com/bgmello/OSINT-Tools-Brazil/) | Bruno Görresen Mello | ✅ Active |
 | 🇧🇬 [Bulgaria](https://github.com/paulpogoda/OSINT-Tools-Bulgaria/tree/main) | @paulpogoda | ✅ Active |
 | 🇨🇳 [China](https://github.com/paulpogoda/OSINT-Tools-China) | @paulpogoda | ✅ Active |
+| 🇭🇷 [Croatia](https://github.com/Provereno-Media/OSINT-Tools-Croatia) | @provereno-media | ✅ Active |
 | 🇨🇺 [Cuba](https://github.com/paulpogoda/osint-tools-cuba/tree/main) | @paulpogoda | ✅ Active |
 | 🇪🇪 [Estonia](https://github.com/paulpogoda/OSINT-Tools-Estonia) | @paulpogoda | ✅ Active |
 | 🇫🇷 [France](https://github.com/Aegyr21/OSINT-Tools-France/) | @Aegyr21 | ✅ Active |
 | 🇩🇪 [Germany](https://github.com/Provereno-Media/OSINT-Tools-Germany) | @provereno-media | ✅ Active |
 | 🇬🇪 [Georgia](https://github.com/SosoPkhakadze/OSINT-Tools-Georgia) | @SosoPkhakadze | ✅ Active |
 | 🇨🇿 [Czechia](https://github.com/Provereno-Media/OSINT-Tools-Czechia/) | @provereno-media | ✅ Active |
+| 🇭🇺 [Hungary](https://github.com/Provereno-Media/OSINT-Tools-Hungary) | @provereno-media | ✅ Active |
 | 🇮🇳 [India](https://github.com/paulpogoda/OSINT-Tools-India) | @paulpogoda | ✅ Active |
 | 🇮🇷 [Iran](https://github.com/paulpogoda/OSINT-Tools-Iran) | @paulpogoda | ✅ Active |
 | 🇮🇶 [Iraq](https://github.com/paulpogoda/OSINT-Tools-Iraq) | @paulpogoda | ✅ Active |
@@ -92,9 +94,12 @@ On each country repository you will find tools and resources grouped by **one un
 | 🇳🇬 [Nigeria](https://github.com/Provereno-Media/OSINT-Tools-Nigeria-V2) | @zerometa-hq · Pogoda | ✅ Active |
 | 🇰🇵 [North Korea](https://github.com/paulpogoda/OSINT-Tools-North-Korea) | @paulpogoda | ✅ Active |
 | 🇵🇱 [Poland](https://github.com/paulpogoda/OSINT-Tools-Poland) | @paulpogoda | ✅ Active |
+| 🇷🇴 [Romania](https://github.com/Provereno-Media/OSINT-Tools-Romania) | @provereno-media | ✅ Active |
 | 🇷🇺 [Russia](https://github.com/paulpogoda/OSINT-Tools-Russia) | @paulpogoda | ✅ Active |
 | 🇸🇦 [Saudi Arabia](https://github.com/paulpogoda/OSINT-Tools-Saudi-Arabia) | @paulpogoda | ✅ Active |
-| 🇷🇸 [Serbia](https://github.com/Provereno-Media/OSINT-Tools-Serbia) | @provereno-media | 🚧 Draft |
+| 🇷🇸 [Serbia](https://github.com/Provereno-Media/OSINT-Tools-Serbia) | @provereno-media | ✅ Active |
+| 🇸🇰 [Slovakia](https://github.com/Provereno-Media/OSINT-Tools-Slovakia) | @provereno-media | ✅ Active |
+| 🇸🇮 [Slovenia](https://github.com/Provereno-Media/OSINT-Tools-Slovenia) | @provereno-media | ✅ Active |
 | 🇪🇸 [Spain](https://github.com/Provereno-Media/OSINT-Tools-Spain) | @provereno-media | ✅ Active |
 | 🇨🇭 [Switzerland](https://github.com/Provereno-Media/OSINT-Tools-Switzerland) | @provereno-media | ✅ Active |
 | 🇸🇾 [Syria](https://github.com/paulpogoda/OSINT-Tools-Syria) | @paulpogoda | ✅ Active |
