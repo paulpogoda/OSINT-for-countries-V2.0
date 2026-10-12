@@ -1,5 +1,9 @@
 # OSINT Resources/Tools by Country V 2.0 
 
+## Explore
+
+**The interactive version of this project is [here](https://provereno-media.github.io/OSINT-for-countries-V2.0/); it grows automatically after the standardized country repo is published by any collaborator and listed in this README.**
+
 [![Stars](https://img.shields.io/github/stars/Provereno-Media/OSINT-for-countries-V2.0?style=flat-square&color=yellow)](https://github.com/Provereno-Media/OSINT-for-countries-V2.0/stargazers)
 [![Forks](https://img.shields.io/github/forks/Provereno-Media/OSINT-for-countries-V2.0?style=flat-square&color=blue)](https://github.com/Provereno-Media/OSINT-for-countries-V2.0/network/members)
 [![Contributors](https://img.shields.io/github/contributors/Provereno-Media/OSINT-for-countries-V2.0?style=flat-square&color=green)](https://github.com/Provereno-Media/OSINT-for-countries-V2.0/graphs/contributors)
@@ -23,12 +27,6 @@
 > This project was inspired by [@wddadk — OSINT for Countries](https://github.com/wddadk/OSINT-for-countries). Here you'll find a GitHub-based collection of links to various OSINT tools, websites, and projects that are specific to different countries, structured for **fact-checkers and digital profilers**.
 >
 > Of course there are a lot of other OSINT collections, but most of them are outdated and abandoned. The project objective is to create a **community-driven, manually tested, standardized collection** on GitHub.
-
----
-
-## Explore
-
-**The interactive version of this project is [here](https://provereno-media.github.io/OSINT-for-countries-V2.0/); it grows automatically after the standardized country repo is published by any collaborator and listed in this README.**
 
 ---
 
