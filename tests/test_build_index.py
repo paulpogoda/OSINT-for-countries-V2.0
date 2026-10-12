@@ -105,6 +105,53 @@ Official resource: [Map](https://example.org/map)
         self.assertEqual([c['reason'] for c in candidates], ['unsupported_format', 'unrecognized_section'])
         self.assertEqual([c['line'] for c in candidates], [2, 4])
 
+    def test_variant_headings_map_by_keyword(self):
+        markdown = '''## Cadastral and Maps
+- [County GIS](https://example.org/gis) - Parcels
+## Open Data
+- [Portal](https://example.org/data) - Datasets
+## Courts
+- [Court portal](https://example.org/courts) - Decisions
+## Stock
+- [Exchange](https://example.org/exchange) - Listings
+## Appendox
+- [Sanctions](https://example.org/sanctions) - Lists
+## Related Resources
+- [Other list](https://example.org/other) - Links
+'''
+        candidates = []
+        rows = resources_from_readme(markdown, 'Example', 'https://github.com/example/repo', candidates)
+        self.assertEqual(
+            [(row['name'], row['category']) for row in rows],
+            [('County GIS', 'Cadastral and other Maps'), ('Portal', 'Open Data portals'),
+             ('Court portal', 'Open Data portals'), ('Exchange', 'Open Data portals')],
+        )
+        self.assertEqual([c['section'] for c in candidates], ['Appendox', 'Related Resources'])
+
+    def test_non_resource_sections_are_not_matched_by_keyword(self):
+        for heading in ('Table of contents', 'Contributing', 'Legal Disclaimer', 'Appendix', '🔍 Search Tips & Best Practices'):
+            self.assertIsNone(build_index.category_for(heading), heading)
+
+    def test_template_people_line_is_skipped(self):
+        markdown = '''## People
+- [Phone directory](https://example.org/phones) - Phone numbers
+- Try [OSINT Industries](https://app.osint.industries) and don't forget about the [Digital Profiler's Toolkit](https://github.com/paulpogoda/Digital-Profiler-s-Toolkit)
+- [OSINT Industries](https://app.osint.industries) with [local guide](https://example.org/guide)
+'''
+        rows = resources_from_readme(markdown, 'Example', 'https://github.com/example/repo')
+        self.assertEqual([row['name'] for row in rows], ['Phone directory', 'OSINT Industries'])
+
+    def test_index_repository_from_environment(self):
+        with patch.dict(build_index.os.environ, {'INDEX_REPOSITORY': '', 'GITHUB_REPOSITORY': 'pogoda-provereno/OSINT-for-countries-V2.0'}):
+            self.assertEqual(build_index.index_repository(), ('pogoda-provereno', 'OSINT-for-countries-V2.0'))
+        with patch.dict(build_index.os.environ, {'INDEX_REPOSITORY': 'Provereno-Media/OSINT-for-countries-V2.0', 'GITHUB_REPOSITORY': 'fork/x'}):
+            self.assertEqual(build_index.index_repository(), ('Provereno-Media', 'OSINT-for-countries-V2.0'))
+        with patch.dict(build_index.os.environ, {'INDEX_REPOSITORY': '', 'GITHUB_REPOSITORY': ''}):
+            self.assertEqual(build_index.index_repository(), ('Provereno-Media', 'OSINT-for-countries-V2.0'))
+        with patch.dict(build_index.os.environ, {'INDEX_REPOSITORY': 'not-a-repo'}):
+            with self.assertRaises(ValueError):
+                build_index.index_repository()
+
     def test_build_reads_canonical_repo_and_writes_report(self):
         index = '| [Example](https://github.com/example/OSINT-Tools-Example) | author | Active |\n'
         country = '## Maps\n- [Map](https://example.org/map) - Official map\n'

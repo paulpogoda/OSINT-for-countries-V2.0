@@ -10,8 +10,19 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
-INDEX_OWNER = 'Provereno-Media'
-INDEX_REPO = 'OSINT-for-countries-V2.0'
+DEFAULT_INDEX_REPOSITORY = 'Provereno-Media/OSINT-for-countries-V2.0'
+
+
+def index_repository():
+    """Repository whose README is the country index: INDEX_REPOSITORY, else the repo running the workflow."""
+    value = os.environ.get('INDEX_REPOSITORY') or os.environ.get('GITHUB_REPOSITORY') or DEFAULT_INDEX_REPOSITORY
+    owner, _, repo = value.strip().partition('/')
+    if not owner or not repo or '/' in repo:
+        raise ValueError(f'Invalid index repository: {value!r}')
+    return owner, repo
+
+
+INDEX_OWNER, INDEX_REPO = index_repository()
 COUNTRY = re.compile(r'^\|[^|]*?\[([^\]]+)\]\(https://github\.com/([A-Za-z0-9-]+)/([A-Za-z0-9_.-]+)(?:/tree/[^/\s)]+)?/?\)', re.I)
 HEADING = re.compile(r'^#{2,4}\s+(.+?)\s*#*\s*$')
 LINK = re.compile(r'\[([^\]]+)\]\((https?://[^\s)]+)\)', re.I)
@@ -30,6 +41,19 @@ CATEGORIES = {
     'whois': 'WHOIS',
 }
 ORDER = tuple(dict.fromkeys(CATEGORIES.values()))
+# Fallback for headings that are not exact aliases, e.g. "Cadastral and Maps", "Open Data", "Courts", "Stock".
+# The template scopes courts and stock exchanges under Open Data portals.
+CATEGORY_KEYWORDS = (
+    (re.compile(r'\bwhois\b'), 'WHOIS'),
+    (re.compile(r'\bprocurements?\b|\btenders?\b'), 'Public procurements'),
+    (re.compile(r'\bpeople\b'), 'People, phones, social etc.'),
+    (re.compile(r'\bvehicles?\b'), 'Vehicles'),
+    (re.compile(r'\bcadastr|\bmaps?\b'), 'Cadastral and other Maps'),
+    (re.compile(r'\blegal entit'), 'Legal Entities'),
+    (re.compile(r'\bopen data\b|\bcourts?\b|\bstocks?\b'), 'Open Data portals'),
+)
+# The fixed People line from the Country Template is identical in every country README.
+TEMPLATE_URLS = {'https://app.osint.industries', 'https://github.com/paulpogoda/digital-profiler-s-toolkit'}
 NON_RESOURCE_SECTIONS = {'table of contents', 'contributions', 'contributing', 'legal disclaimer', 'appendix', 'about', 'license'}
 
 
@@ -42,6 +66,23 @@ def clean(text):
 def category_key(text):
     text = clean(text).casefold()
     return re.sub(r'\s+', ' ', re.sub(r'[^\w\s]+', ' ', text)).strip()
+
+
+def category_for(heading_text):
+    label = category_key(heading_text)
+    if label in CATEGORIES:
+        return CATEGORIES[label]
+    if label in NON_RESOURCE_SECTIONS:
+        return None
+    for pattern, category in CATEGORY_KEYWORDS:
+        if pattern.search(label):
+            return category
+    return None
+
+
+def is_template_line(line):
+    urls = [match.group(2).rstrip('/.,;').casefold() for match in LINK.finditer(line)]
+    return bool(urls) and all(url in TEMPLATE_URLS for url in urls)
 
 
 def countries_from_index(markdown):
@@ -112,7 +153,7 @@ def resources_from_readme(markdown, country, repo_url, candidates=None):
             label = category_key(heading_text)
             if level == 2:
                 section = clean(heading_text)
-                category = CATEGORIES.get(label)
+                category = category_for(heading_text)
                 subsection = ''
             elif category == 'Vehicles' and level == 3 and not LINK.search(heading_text):
                 subsection = clean(heading_text)
@@ -135,6 +176,8 @@ def resources_from_readme(markdown, country, repo_url, candidates=None):
             continue
         match = LINK.search(line)
         if not match:
+            continue
+        if category and is_template_line(line):
             continue
         if category and (BULLET.match(line) or line.startswith('|')):
             add_resource(match, line[match.end():])
