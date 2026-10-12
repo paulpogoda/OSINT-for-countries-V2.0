@@ -85,6 +85,7 @@ On each country repository you will find tools and resources grouped by **one un
 | 🇮🇳 [India](https://github.com/paulpogoda/OSINT-Tools-India) | @paulpogoda | ✅ Active |
 | 🇮🇷 [Iran](https://github.com/paulpogoda/OSINT-Tools-Iran) | @paulpogoda | ✅ Active |
 | 🇮🇶 [Iraq](https://github.com/paulpogoda/OSINT-Tools-Iraq) | @paulpogoda | ✅ Active |
+| 🇮🇪 [Ireland](https://github.com/Provereno-Media/OSINT-Tools-Ireland) | @provereno-media | ✅ Active |
 | 🇮🇱 [Israel](https://github.com/paulpogoda/OSINT-Tools-Israel) | @paulpogoda | ✅ Active |
 | 🇰🇿 [Kazakhstan](https://github.com/paulpogoda/OSINT-Tools-Kazakhstan) | @paulpogoda | ✅ Active |
 | 🇰🇬 [Kyrgyzstan](https://github.com/paulpogoda/OSINT-Tools-Kyrgyzstan) | @paulpogoda | ✅ Active |
