@@ -103,9 +103,9 @@ On each country repository you will find tools and resources grouped by **one un
 | 🇸🇾 [Syria](https://github.com/paulpogoda/OSINT-Tools-Syria) | @paulpogoda | ✅ Active |
 | 🇹🇼 [Taiwan](https://github.com/paulpogoda/OSINT-Tools-Taiwan) | @paulpogoda | ✅ Active |
 | 🇹🇯 [Tajikistan](https://github.com/paulpogoda/OSINT-Tools-Tajikistan) | @paulpogoda | ✅ Active |
-| 🇦🇪 [United Arab Emirates](https://github.com/paulpogoda/OSINT-Tools-Emirates) | @paulpogoda | ✅ Active |
+| 🇦🇪 [United Arab Emirates](https://github.com/Provereno-Media/OSINT-Tools-Emirates) | @paulpogoda · Provereno | ✅ Active |
 | 🇬🇧 [United Kingdom](https://github.com/paulpogoda/OSINT-Tools-UK) | @paulpogoda | ✅ Active |
-| 🇺🇸 [United States of America](https://github.com/paulpogoda/OSINT-Tools_USA) | @paulpogoda | ✅ Active |
+| 🇺🇸 [United States of America](https://github.com/Provereno-Media/OSINT-Tools_USA) | @paulpogoda · Provereno| ✅ Active |
 | 🇺🇿 [Uzbekistan](https://github.com/paulpogoda/OSINT-Tools-Uzbekistan) | @paulpogoda | ✅ Active |
 
 ---
