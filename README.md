@@ -1,8 +1,5 @@
 # OSINT Resources/Tools by Country V 2.0 
 
-![image](https://github.com/user-attachments/assets/af412678-6d84-40c0-aa99-5041c928e47e)
-
-
 [![Stars](https://img.shields.io/github/stars/Provereno-Media/OSINT-for-countries-V2.0?style=flat-square&color=yellow)](https://github.com/Provereno-Media/OSINT-for-countries-V2.0/stargazers)
 [![Forks](https://img.shields.io/github/forks/Provereno-Media/OSINT-for-countries-V2.0?style=flat-square&color=blue)](https://github.com/Provereno-Media/OSINT-for-countries-V2.0/network/members)
 [![Contributors](https://img.shields.io/github/contributors/Provereno-Media/OSINT-for-countries-V2.0?style=flat-square&color=green)](https://github.com/Provereno-Media/OSINT-for-countries-V2.0/graphs/contributors)
