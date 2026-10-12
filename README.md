@@ -79,6 +79,7 @@ On each country repository you will find tools and resources grouped by **one un
 | 🇫🇷 [France](https://github.com/Aegyr21/OSINT-Tools-France/) | @Aegyr21 | ✅ Active |
 | 🇩🇪 [Germany](https://github.com/Provereno-Media/OSINT-Tools-Germany) | @provereno-media | ✅ Active |
 | 🇬🇪 [Georgia](https://github.com/SosoPkhakadze/OSINT-Tools-Georgia) | @SosoPkhakadze | ✅ Active |
+| 🇨🇿 [Czechia](https://github.com/Provereno-Media/OSINT-Tools-Czechia/) | @provereno-media | ✅ Active |
 | 🇮🇳 [India](https://github.com/paulpogoda/OSINT-Tools-India) | @paulpogoda | ✅ Active |
 | 🇮🇷 [Iran](https://github.com/paulpogoda/OSINT-Tools-Iran) | @paulpogoda | ✅ Active |
 | 🇮🇶 [Iraq](https://github.com/paulpogoda/OSINT-Tools-Iraq) | @paulpogoda | ✅ Active |
