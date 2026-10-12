@@ -24,7 +24,7 @@
 
 ## About
 
-> This project was inspired by [@wddadk — OSINT for Countries](https://github.com/wddadk/OSINT-for-countries). Here you'll find a GitHub-based collection of links to various OSINT tools, websites, and projects that are specific to different countries, structured for **fact-checkers and digital profilers**.
+> This project was inspired by [@wddadk — OSINT for Countries](https://github.com/wddadk/OSINT-for-countries) and developed by [Pogoda](https://github.com/paulpogoda), Provereno's Methodology Section Editor. Here you'll find a GitHub-based collection of links to various OSINT tools, websites, and projects that are specific to different countries, structured for **fact-checkers and digital profilers**.
 >
 > Of course there are a lot of other OSINT collections, but most of them are outdated and abandoned. The project objective is to create a **community-driven, manually tested, standardized collection** on GitHub.
 
