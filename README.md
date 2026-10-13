@@ -101,6 +101,7 @@ On each country repository you will find tools and resources grouped by **one un
 | 🇸🇰 [Slovakia](https://github.com/Provereno-Media/OSINT-Tools-Slovakia) | @provereno-media | ✅ Active |
 | 🇸🇮 [Slovenia](https://github.com/Provereno-Media/OSINT-Tools-Slovenia) | @provereno-media | ✅ Active |
 | 🇪🇸 [Spain](https://github.com/Provereno-Media/OSINT-Tools-Spain) | @provereno-media | ✅ Active |
+| 🇸🇪 [Sweden](https://github.com/Provereno-Media/OSINT-Tools-Sweden) | @provereno-media | ✅ Active |
 | 🇨🇭 [Switzerland](https://github.com/Provereno-Media/OSINT-Tools-Switzerland) | @provereno-media | ✅ Active |
 | 🇸🇾 [Syria](https://github.com/paulpogoda/OSINT-Tools-Syria) | @paulpogoda | ✅ Active |
 | 🇹🇼 [Taiwan](https://github.com/paulpogoda/OSINT-Tools-Taiwan) | @paulpogoda | ✅ Active |
