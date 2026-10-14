@@ -11,6 +11,7 @@ import json
 import os
 import re
 import sys
+import urllib.error
 import urllib.request
 from pathlib import Path
 from urllib.parse import quote
@@ -52,8 +53,18 @@ def api(method, path, body=None):
         headers['Authorization'] = 'Bearer ' + os.environ['GITHUB_TOKEN']
     data = json.dumps(body).encode() if body is not None else None
     request = urllib.request.Request('https://api.github.com' + path, data=data, headers=headers, method=method)
-    with urllib.request.urlopen(request, timeout=20) as response:
-        return json.loads(response.read())
+    try:
+        with urllib.request.urlopen(request, timeout=20) as response:
+            return json.loads(response.read())
+    except urllib.error.HTTPError as exc:
+        raise OSError(f'{method} {path}: HTTP {exc.code}: {github_message(exc)}') from exc
+
+
+def github_message(exc):
+    try:
+        return json.loads(exc.read()).get('message', exc.reason)
+    except (OSError, ValueError, AttributeError):
+        return exc.reason
 
 
 def main():

@@ -3,6 +3,11 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
+import io
+import urllib.error
+from unittest.mock import patch
+
+import set_last_updated_badge
 from set_last_updated_badge import badge, with_badge
 
 LINE = badge('paulpogoda', 'OSINT-Tools-Estonia')
@@ -40,6 +45,14 @@ class BadgeTests(unittest.TestCase):
         self.assertEqual(action, 'inserted')
         self.assertEqual(updated, ('# OSINT-Tools-Estonia\n<img src="flag.png" alt="Estonia_FLAG"/>\n'
                                    f'A list of OSINT resources.\n\n{LINE}\n\n## Contributions\nJoin\n## Legal Entities\n'))
+
+    def test_api_error_includes_github_message(self):
+        error = urllib.error.HTTPError('https://api.github.com/x', 403, 'Forbidden', {},
+                                       io.BytesIO(b'{"message": "Resource not accessible by personal access token"}'))
+        with patch.object(set_last_updated_badge.urllib.request, 'urlopen', side_effect=error):
+            with self.assertRaises(OSError) as ctx:
+                set_last_updated_badge.api('PUT', '/repos/o/r/contents/README.md', {})
+        self.assertEqual(str(ctx.exception), 'PUT /repos/o/r/contents/README.md: HTTP 403: Resource not accessible by personal access token')
 
 
 if __name__ == '__main__':
