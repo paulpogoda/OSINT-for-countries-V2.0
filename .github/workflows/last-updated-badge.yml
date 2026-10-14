@@ -1,0 +1,49 @@
+name: Set Last Updated badge in country READMEs
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: Commit changes (unchecked = dry run, nothing is changed)
+        type: boolean
+        default: false
+      only:
+        description: Comma-separated country names (empty = all)
+        type: string
+        default: ''
+      insert_missing:
+        description: Add the badge under the first heading where no Last Updated line exists
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: last-updated-badge
+  cancel-in-progress: false
+jobs:
+  badge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Run badge script
+        env:
+          GITHUB_TOKEN: ${{ secrets.BADGE_TOKEN }}
+          APPLY: ${{ inputs.apply }}
+          ONLY: ${{ inputs.only }}
+          INSERT_MISSING: ${{ inputs.insert_missing }}
+        run: |
+          if [ -z "$GITHUB_TOKEN" ]; then
+            echo "::error::Repository secret BADGE_TOKEN is not set (see docs/REPOSITORY_SETUP.md)"
+            exit 1
+          fi
+          args=()
+          [ "$APPLY" = "true" ] && args+=(--apply)
+          [ "$INSERT_MISSING" = "true" ] && args+=(--insert-missing)
+          [ -n "$ONLY" ] && args+=(--only "$ONLY")
+          status=0
+          python scripts/set_last_updated_badge.py "${args[@]}" > "$RUNNER_TEMP/badge.log" 2>&1 || status=$?
+          cat "$RUNNER_TEMP/badge.log"
+          { echo '```'; cat "$RUNNER_TEMP/badge.log"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          exit "$status"

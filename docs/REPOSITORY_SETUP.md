@@ -47,6 +47,17 @@ GITHUB_TOKEN=... python scripts/set_last_updated_badge.py --apply
 
 The script replaces the first `Last Updated: …` line in each indexed README; `--insert-missing` adds the badge under the first heading where no such line exists, and `--only "Estonia,Latvia"` limits the run. With `--apply` it commits only to repositories the token can push to and lists the rest under `no_push_access`; propose the change to those maintainers by PR. The badge is an edit date, not a review date (see STANDARD.md).
 
+### Running it from GitHub Actions
+
+The **Set Last Updated badge in country READMEs** workflow runs the same script without a local setup.
+
+1. Create a token from an account with write access to the country repositories: a classic token with the `public_repo` scope covers both `paulpogoda/*` and `Provereno-Media/*` (a fine-grained token covers only one owner). Give it a short expiry.
+2. Save it as the repository secret `BADGE_TOKEN` (Settings → Secrets and variables → Actions → New repository secret).
+3. Actions → *Set Last Updated badge in country READMEs* → **Run workflow**. Leave **apply** unchecked for a dry run; the result appears in the run summary. Try one country with **only** = `Estonia` and **apply** checked before running all.
+4. Delete the secret and revoke the token when done.
+
+The run fails if any README could not be read, so errors are not hidden behind a green check.
+
 ## Issue templates
 
 Files in `.github/ISSUE_TEMPLATE/` become available after merge. Check that their labels, required fields and links match the repository's moderation process. No labels are assumed to exist.
