@@ -36,6 +36,17 @@ The script captures the actual published site as `assets/interactive-directory.p
 
 All country review dates initially remain unrecorded. Document an actual review in `data/country_reviews.csv`, linking evidence, then run `python scripts/update_country_freshness.py`. Review diffs before merging. Do not automate a 'reviewed today' date on builds or commits.
 
+## Last Updated badge in country READMEs
+
+The Country Template shows the repository's last commit date through a shields.io badge instead of a hand-written date. To convert existing country READMEs, run from the repository root:
+
+```bash
+python scripts/set_last_updated_badge.py                    # dry run: lists what would change
+GITHUB_TOKEN=... python scripts/set_last_updated_badge.py --apply
+```
+
+The script replaces the first `Last Updated: …` line in each indexed README; `--insert-missing` adds the badge under the first heading where no such line exists, and `--only "Estonia,Latvia"` limits the run. With `--apply` it commits only to repositories the token can push to and lists the rest under `no_push_access`; propose the change to those maintainers by PR. The badge is an edit date, not a review date (see STANDARD.md).
+
 ## Issue templates
 
 Files in `.github/ISSUE_TEMPLATE/` become available after merge. Check that their labels, required fields and links match the repository's moderation process. No labels are assumed to exist.

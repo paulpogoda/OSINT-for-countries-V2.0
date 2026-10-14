@@ -1,0 +1,41 @@
+name: Add a country
+description: Propose a new country repository for the index.
+title: "[Country] <Country name>"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Start from the [Country Template](https://github.com/Provereno-Media/OSINT-for-countries-V2.0/blob/main/Country%20Template). The README must use the seven category headings so the interactive directory can index it.
+  - type: input
+    id: country
+    attributes:
+      label: Country
+    validations:
+      required: true
+  - type: input
+    id: repo
+    attributes:
+      label: Repository URL
+      description: Public GitHub repository. Leave empty if not created yet.
+      placeholder: https://github.com/<owner>/OSINT-Tools-<Country>
+  - type: input
+    id: maintainer
+    attributes:
+      label: Maintainer
+      description: GitHub handle of the person who will maintain the list.
+    validations:
+      required: true
+  - type: dropdown
+    id: state
+    attributes:
+      label: State of the list
+      options:
+        - Draft — incomplete, some categories empty
+        - Ready — all seven categories covered
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Languages of the resources, access restrictions typical for the country, anything reviewers should know.

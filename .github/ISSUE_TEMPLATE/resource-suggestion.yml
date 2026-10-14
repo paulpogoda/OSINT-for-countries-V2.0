@@ -1,0 +1,75 @@
+name: Suggest a resource
+description: Propose a resource for a country list or the multi-country table.
+title: "[Resource] <Country>: <resource name>"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If the country repository accepts issues or PRs, you can propose the resource there directly. See [STANDARD.md](https://github.com/Provereno-Media/OSINT-for-countries-V2.0/blob/main/STANDARD.md) for inclusion criteria.
+  - type: input
+    id: country
+    attributes:
+      label: Country
+      description: Or "Multi-country" for cross-border resources.
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Resource URL
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Open databases & statistics
+        - Legal entities, tax information & registries
+        - Maps, land records & cadastres
+        - "Vehicles: road, maritime & aviation"
+        - People, public documents, social accounts & identifiers
+        - Public procurement
+        - WHOIS & domain records
+        - Multi-country collection
+    validations:
+      required: true
+  - type: input
+    id: publisher
+    attributes:
+      label: Publisher / operator
+      description: Who runs it. State whether it is official (government, registry) or third-party.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: What it contains
+      description: Neutral description of the data actually available.
+    validations:
+      required: true
+  - type: checkboxes
+    id: access
+    attributes:
+      label: Access requirements
+      options:
+        - label: Free
+        - label: Registration required
+        - label: Paid
+        - label: Available only from certain countries / local network
+        - label: Requires local ID or credentials
+  - type: input
+    id: checked
+    attributes:
+      label: Date checked
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: The resource is not a leaked-data collection, doxxing dump or unlawful-access tool.
+          required: true
