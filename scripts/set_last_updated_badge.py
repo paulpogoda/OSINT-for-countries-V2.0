@@ -99,6 +99,8 @@ def main():
         print(f'{action} ({len(names)}): {", ".join(names)}')
     if not args.apply:
         print('\nDry run; nothing committed. Re-run with --apply to commit.')
+    if any(action.startswith('error') for action in results):
+        raise SystemExit(1)
 
 
 if __name__ == '__main__':
