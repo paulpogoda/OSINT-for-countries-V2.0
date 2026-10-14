@@ -5,13 +5,12 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from set_last_updated_badge import badge, with_badge
 
-LINE = badge('paulpogoda', 'OSINT-Tools-Estonia', 'README.md')
+LINE = badge('paulpogoda', 'OSINT-Tools-Estonia')
 
 
 class BadgeTests(unittest.TestCase):
     def test_badge_url(self):
-        self.assertEqual(LINE, '![Last updated](https://img.shields.io/github/last-commit/paulpogoda/OSINT-Tools-Estonia?path=README.md&label=Last%20updated)')
-        self.assertIn('path=docs/Read%20Me.md', badge('o', 'r', 'docs/Read Me.md'))
+        self.assertEqual(LINE, '![Last updated](https://img.shields.io/github/last-commit/paulpogoda/OSINT-Tools-Estonia?label=Last%20updated)')
 
     def test_replaces_template_line_variants(self):
         for line in ('**Last Updated:** DATE ', '**Last updated:** March 2025', 'Last Updated: 2024-01-05', '__Last Updated__: 05.01.2024'):

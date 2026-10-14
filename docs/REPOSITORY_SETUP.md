@@ -38,7 +38,7 @@ All country review dates initially remain unrecorded. Document an actual review 
 
 ## Last Updated badge in country READMEs
 
-The Country Template shows the README's last commit date through a shields.io badge instead of a hand-written date. To convert existing country READMEs, run from the repository root:
+The Country Template shows the repository's last commit date through a shields.io badge instead of a hand-written date. To convert existing country READMEs, run from the repository root:
 
 ```bash
 python scripts/set_last_updated_badge.py                    # dry run: lists what would change

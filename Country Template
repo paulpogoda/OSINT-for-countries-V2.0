@@ -2,7 +2,7 @@
 <img src="LINK-TO-THE-FLAG.PNG" alt="COUNTRY-NAME_FLAG"/>
 A list of OSINT resources and tools that may be useful to you when conducting investigations related to [COUNTRY NAME]. Most of the resources and tools has versions in [LANGUAGES]. [OTHER COMMENTS]
 
-![Last updated](https://img.shields.io/github/last-commit/OWNER/REPO?path=README.md&label=Last%20updated)
+![Last updated](https://img.shields.io/github/last-commit/OWNER/REPO?label=Last%20updated)
 
 ## Contributions
 Feel free to join this project — [OSINT For Countries V2.0](https://github.com/Provereno-Media/OSINT-for-countries-V2.0)

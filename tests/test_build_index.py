@@ -161,28 +161,28 @@ Official resource: [Map](https://example.org/map)
             self.assertEqual((owner, repo), ('example', 'OSINT-Tools-Example'))
             return country
         with tempfile.TemporaryDirectory() as folder, patch.object(build_index, 'fetch_readme', side_effect=fake_readme), \
-                patch.object(build_index, 'readme_updated', return_value='2026-01-31'):
+                patch.object(build_index, 'last_commit', return_value='2026-01-31'):
             output = Path(folder) / 'site' / 'resources.json'
             build_index.build(output)
             data = json.loads(output.read_text(encoding='utf-8'))
             report = json.loads(output.with_name('import-report.json').read_text(encoding='utf-8'))
         self.assertEqual(data['countries'][0]['categories']['Cadastral and other Maps'], 1)
-        self.assertEqual(data['countries'][0]['readme_updated'], '2026-01-31')
+        self.assertEqual(data['countries'][0]['last_commit'], '2026-01-31')
         self.assertEqual(report['country_imported'], 1)
         self.assertEqual(report['resource_total'], 1)
         self.assertEqual(report['possible_omissions'], [])
 
-    def test_readme_updated_uses_readme_path(self):
-        responses = {
-            '/repos/o/r/readme': '{"path": "docs/Read Me.md"}',
-            '/repos/o/r/commits?path=docs/Read%20Me.md&per_page=1': '[{"commit": {"committer": {"date": "2025-04-03T10:00:00Z"}}}]',
-        }
-        with patch.object(build_index, 'github_get', side_effect=lambda path, accept=None: responses[path]):
-            self.assertEqual(build_index.readme_updated('o', 'r'), '2025-04-03')
+    def test_last_commit_date(self):
+        response = '[{"commit": {"committer": {"date": "2025-04-03T10:00:00Z"}}}]'
+        with patch.object(build_index, 'github_get', return_value=response) as get:
+            self.assertEqual(build_index.last_commit('o', 'r'), '2025-04-03')
+        get.assert_called_once_with('/repos/o/r/commits?per_page=1')
 
-    def test_readme_updated_failure_is_none(self):
+    def test_last_commit_empty_or_failure_is_none(self):
+        with patch.object(build_index, 'github_get', return_value='[]'):
+            self.assertIsNone(build_index.last_commit('o', 'r'))
         with patch.object(build_index, 'github_get', side_effect=OSError('HTTP 404')):
-            self.assertIsNone(build_index.readme_updated('o', 'r'))
+            self.assertIsNone(build_index.last_commit('o', 'r'))
 
 
 if __name__ == '__main__':

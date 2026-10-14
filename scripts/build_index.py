@@ -7,7 +7,7 @@ import sys
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import quote, urlparse
+from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_INDEX_REPOSITORY = 'Provereno-Media/OSINT-for-countries-V2.0'
@@ -205,14 +205,13 @@ def fetch_readme(owner, repo):
     return github_get(f'/repos/{owner}/{repo}/readme', 'application/vnd.github.raw+json')
 
 
-def readme_updated(owner, repo):
-    """Date of the last commit touching the README (an edit date, not a review date), or None."""
+def last_commit(owner, repo):
+    """Date of the last commit on the default branch (an edit date, not a review date), or None."""
     try:
-        path = json.loads(github_get(f'/repos/{owner}/{repo}/readme'))['path']
-        commits = json.loads(github_get(f'/repos/{owner}/{repo}/commits?path={quote(path)}&per_page=1'))
+        commits = json.loads(github_get(f'/repos/{owner}/{repo}/commits?per_page=1'))
         return commits[0]['commit']['committer']['date'][:10] if commits else None
     except (OSError, UnicodeError, ValueError, KeyError, IndexError, TypeError) as exc:
-        print(f'WARNING: {owner}/{repo}: README date unavailable: {exc}', file=sys.stderr)
+        print(f'WARNING: {owner}/{repo}: last commit date unavailable: {exc}', file=sys.stderr)
         return None
 
 
@@ -236,7 +235,7 @@ def build(output):
                 raise ValueError('No resources recognized in README')
             records.extend(found)
             counts = {category: sum(r['category'] == category for r in found) for category in ORDER}
-            status.append({'country': item['name'], 'repository': repo_url, 'count': len(found), 'categories': counts, 'candidates': len(country_candidates), 'readme_updated': readme_updated(item['owner'], item['repo']), 'ok': True})
+            status.append({'country': item['name'], 'repository': repo_url, 'count': len(found), 'categories': counts, 'candidates': len(country_candidates), 'last_commit': last_commit(item['owner'], item['repo']), 'ok': True})
             candidates.extend(country_candidates)
         except (OSError, UnicodeError, ValueError) as exc:
             print(f"WARNING: {repo_url}: {exc}", file=sys.stderr)

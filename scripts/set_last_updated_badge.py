@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Replace the manual "Last Updated" line in indexed country READMEs with a last-commit badge.
 
-The badge shows the date of the last commit to the README: an edit date, not a content review
+The badge shows the date of the repository's last commit: an edit date, not a content review
 (see STANDARD.md). Dry run by default; --apply commits through the GitHub API and needs
 GITHUB_TOKEN with contents write access to the country repositories.
 """
@@ -24,8 +24,8 @@ BADGE_MARK = 'img.shields.io/github/last-commit/'
 COMMIT_MESSAGE = 'Replace manual Last Updated date with last-commit badge'
 
 
-def badge(owner, repo, path):
-    return f'![Last updated](https://img.shields.io/github/last-commit/{owner}/{repo}?path={quote(path)}&label=Last%20updated)'
+def badge(owner, repo):
+    return f'![Last updated](https://img.shields.io/github/last-commit/{owner}/{repo}?label=Last%20updated)'
 
 
 def with_badge(markdown, line, insert_missing=False):
@@ -73,13 +73,13 @@ def main():
         try:
             readme = api('GET', f'/repos/{owner}/{repo}/readme')
             markdown = base64.b64decode(readme['content']).decode('utf-8-sig')
-            updated, action = with_badge(markdown, badge(owner, repo, readme['path']), args.insert_missing)
+            updated, action = with_badge(markdown, badge(owner, repo), args.insert_missing)
             if action in ('replaced', 'inserted'):
                 old = LAST_UPDATED.search(markdown)
                 print(f'{name}: {action} in {owner}/{repo}/{readme["path"]}')
                 if old:
                     print(f'  - {old.group(0).strip()}')
-                print(f'  + {badge(owner, repo, readme["path"])}')
+                print(f'  + {badge(owner, repo)}')
                 if args.apply:
                     if not api('GET', f'/repos/{owner}/{repo}').get('permissions', {}).get('push'):
                         action = 'no_push_access'

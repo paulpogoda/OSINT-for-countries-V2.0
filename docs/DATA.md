@@ -16,7 +16,7 @@ Both files are build output, not a stable API: field names may change with the b
   "generated_at": "ISO 8601 UTC timestamp of the build",
   "index_source": "https://github.com/Provereno-Media/OSINT-for-countries-V2.0/blob/HEAD/README.md",
   "countries": [
-    {"country": "…", "repository": "…", "count": 0, "categories": {"…": 0}, "candidates": 0, "readme_updated": "YYYY-MM-DD", "ok": true}
+    {"country": "…", "repository": "…", "count": 0, "categories": {"…": 0}, "candidates": 0, "last_commit": "YYYY-MM-DD", "ok": true}
   ],
   "resources": [
     {"country": "…", "category": "…", "subsection": "…", "name": "…", "description": "…", "url": "…", "source": "…/blob/HEAD/README.md"}
@@ -24,7 +24,7 @@ Both files are build output, not a stable API: field names may change with the b
 }
 ```
 
-`readme_updated` is the date of the last commit to the country README, or `null` if it could not be read. The site shows it as "list edited" on each card.
+`last_commit` is the date of the last commit on the country repository's default branch (any file, not only the README), or `null` if it could not be read. The site shows it as "repo updated" on each card.
 
 A country whose README could not be fetched or parsed has `"ok": false` and an `"error"` message; its resources are absent from the search.
 
@@ -34,7 +34,7 @@ Contains `generated_at`, `index_source`, `country_total`, `country_imported`, `r
 
 ## What the data does not mean
 
-`generated_at` is the build time and `readme_updated` the last README edit; neither is a review date. Inclusion means a link was found in a country README; it does not mean the link is reachable or its data accurate. Review dates are recorded separately in `data/country_reviews.csv` (see [STANDARD.md](../STANDARD.md#evidence-and-audit-trail)).
+`generated_at` is the build time and `last_commit` the last repository commit; neither is a review date. Inclusion means a link was found in a country README; it does not mean the link is reachable or its data accurate. Review dates are recorded separately in `data/country_reviews.csv` (see [STANDARD.md](../STANDARD.md#evidence-and-audit-trail)).
 
 ```bash
 curl -fLsS 'https://provereno-media.github.io/OSINT-for-countries-V2.0/import-report.json' | python -m json.tool
