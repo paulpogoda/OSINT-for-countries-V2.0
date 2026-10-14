@@ -42,4 +42,4 @@ Files in `.github/ISSUE_TEMPLATE/` become available after merge. Check that thei
 
 ## Data exports
 
-`docs/DATA.md` distinguishes referenced `import-report.json` from proposed exports. Deployment of `countries.json`/`resources.json` requires new implementation, review and tests in the existing index builder.
+`scripts/build_index.py` publishes `resources.json` and `import-report.json` on each Pages build; see `docs/DATA.md`. Any new export must be added to the builder with tests in `tests/test_build_index.py`.

@@ -1,35 +1,39 @@
-# Data exports and API — current references and proposed roadmap
+# Data exports
 
-## Existing referenced output (not independently verified in this delivery)
+The GitHub Pages workflow (`.github/workflows/pages.yml`) runs `scripts/build_index.py` on every push to `main` that touches the index, and weekly on Mondays. The script reads the country table in this repository's `README.md`, fetches each country repository's README through the GitHub API and publishes two JSON files next to the site:
 
-The supplied README links to [https://provereno-media.github.io/OSINT-for-countries-V2.0/import-report.json](https://provereno-media.github.io/OSINT-for-countries-V2.0/import-report.json), and the badges reference its `country_total` and `resource_total` properties. The repository includes `scripts/build_index.py` and a GitHub Pages site; **the current live endpoint and detailed response schema could not be verified from this environment**. Treat this as an existing **reference in the README**, not a compatibility guarantee.
+| File | Used by | Contents |
+|---|---|---|
+| [`resources.json`](https://provereno-media.github.io/OSINT-for-countries-V2.0/resources.json) | Interactive directory | Per-country import status and all parsed resource records |
+| [`import-report.json`](https://provereno-media.github.io/OSINT-for-countries-V2.0/import-report.json) | README badges, coverage review | Totals, per-country status and possible parsing omissions |
 
-### How to inspect the published output
+Both files are build output, not a stable API: field names may change with the builder. No versioning or compatibility guarantee is offered.
+
+## `resources.json`
+
+```json
+{
+  "generated_at": "ISO 8601 UTC timestamp of the build",
+  "index_source": "https://github.com/Provereno-Media/OSINT-for-countries-V2.0/blob/HEAD/README.md",
+  "countries": [
+    {"country": "…", "repository": "…", "count": 0, "categories": {"…": 0}, "candidates": 0, "ok": true}
+  ],
+  "resources": [
+    {"country": "…", "category": "…", "subsection": "…", "name": "…", "description": "…", "url": "…", "source": "…/blob/HEAD/README.md"}
+  ]
+}
+```
+
+A country whose README could not be fetched or parsed has `"ok": false` and an `"error"` message; its resources are absent from the search.
+
+## `import-report.json`
+
+Contains `generated_at`, `index_source`, `country_total`, `country_imported`, `resource_total`, the same `countries` list, and `possible_omissions` — links the parser saw but did not index (unsupported line format or unrecognized section). Omissions need manual review; a zero count in a category does not by itself prove a parsing error.
+
+## What the data does not mean
+
+`generated_at` is the build time, not a review date. Inclusion means a link was found in a country README; it does not mean the link is reachable or its data accurate. Review dates are recorded separately in `data/country_reviews.csv` (see [STANDARD.md](../STANDARD.md#evidence-and-audit-trail)).
 
 ```bash
 curl -fLsS 'https://provereno-media.github.io/OSINT-for-countries-V2.0/import-report.json' | python -m json.tool
 ```
-
-Always handle a non-200 response or missing keys without assuming zero resources.
-
-## Proposed machine-readable exports (not implemented)
-
-| Proposed file | Purpose | Status |
-|---|---|---|
-| `countries.json` | Country name, URL, maintainer, explicit status and review evidence | Proposed |
-| `resources.json` | Normalized resource records and country/category mapping | Proposed |
-| `stats.json` | Build-derived counts and timestamps | Proposed |
-
-Example **illustrative schema, not an actual dataset**:
-
-```json
-{
-  "country": "Exampleland",
-  "repository_url": "https://github.com/example/example-country",
-  "status": "listed",
-  "last_reviewed": null,
-  "review_evidence_url": null
-}
-```
-
-A future stable API needs documented schemas, versioning (`schema_version`), validation, pagination for large exports, provenance, licensing/attribution, error handling and a published compatibility policy. A build timestamp is not a review timestamp. Do not advertise these proposed files as deployed until CI generates, validates and publishes them.
