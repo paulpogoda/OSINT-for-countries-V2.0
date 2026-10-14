@@ -69,6 +69,7 @@ On each country repository you will find tools and resources grouped by **one un
 | 🇦🇿 [Azerbaijan](https://github.com/paulpogoda/OSINT-Tools-Azerbaijan/) | @paulpogoda | ✅ Active |
 | 🇧🇩 [Bangladesh](https://github.com/paulpogoda/OSINT-Tools-Bangladesh) | Tausif Akbar · Pogoda | ✅ Active |
 | 🇧🇾 [Belarus](https://github.com/paulpogoda/OSINT-Tools-Belarus) | @paulpogoda | ✅ Active |
+| 🇧🇪 [Belgium](https://github.com/Provereno-Media/OSINT-Tools-Belgium) | @provereno-media | ✅ Active |
 | 🇧🇷 [Brazil](https://github.com/bgmello/OSINT-Tools-Brazil/) | Bruno Görresen Mello | ✅ Active |
 | 🇧🇬 [Bulgaria](https://github.com/paulpogoda/OSINT-Tools-Bulgaria/tree/main) | @paulpogoda | ✅ Active |
 | 🇨🇳 [China](https://github.com/paulpogoda/OSINT-Tools-China) | @paulpogoda | ✅ Active |
@@ -88,6 +89,7 @@ On each country repository you will find tools and resources grouped by **one un
 | 🇮🇶 [Iraq](https://github.com/paulpogoda/OSINT-Tools-Iraq) | @paulpogoda | ✅ Active |
 | 🇮🇪 [Ireland](https://github.com/Provereno-Media/OSINT-Tools-Ireland) | @provereno-media | ✅ Active |
 | 🇮🇱 [Israel](https://github.com/paulpogoda/OSINT-Tools-Israel) | @paulpogoda | ✅ Active |
+| 🇮🇹 [Italy](https://github.com/Provereno-Media/OSINT-Tools-Italy) | @provereno-media | ✅ Active |
 | 🇰🇿 [Kazakhstan](https://github.com/paulpogoda/OSINT-Tools-Kazakhstan) | @paulpogoda | ✅ Active |
 | 🇰🇬 [Kyrgyzstan](https://github.com/paulpogoda/OSINT-Tools-Kyrgyzstan) | @paulpogoda | ✅ Active |
 | 🇱🇻 [Latvia](https://github.com/paulpogoda/OSINT-Tools-Latvia) | @paulpogoda | ✅ Active |
