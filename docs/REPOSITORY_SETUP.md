@@ -45,7 +45,7 @@ python scripts/set_last_updated_badge.py                    # dry run: lists wha
 GITHUB_TOKEN=... python scripts/set_last_updated_badge.py --apply
 ```
 
-The script replaces the first `Last Updated: …` line in each indexed README; `--insert-missing` adds the badge under the first heading where no such line exists, and `--only "Estonia,Latvia"` limits the run. With `--apply` it commits only to repositories the token can push to and lists the rest under `no_push_access`; propose the change to those maintainers by PR. The badge is an edit date, not a review date (see STANDARD.md).
+The script replaces the first `Last Updated: …` line in each indexed README; `--insert-missing` adds the badge after the introduction (before the first `##` section, as in the Country Template) where no such line exists, and `--only "Estonia,Latvia"` limits the run. With `--apply` it commits only to repositories the token can push to and lists the rest under `no_push_access`; propose the change to those maintainers by PR. The badge is an edit date, not a review date (see STANDARD.md).
 
 ### Running it from GitHub Actions
 

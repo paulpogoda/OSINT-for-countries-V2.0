@@ -11,7 +11,7 @@ on:
         type: string
         default: ''
       insert_missing:
-        description: Add the badge under the first heading where no Last Updated line exists
+        description: Add the badge after the introduction where no Last Updated line exists
         type: boolean
         default: false
 permissions:
