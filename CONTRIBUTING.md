@@ -6,9 +6,9 @@ Thank you for helping maintain country-specific OSINT resources. The country ind
 
 1. **Report a broken resource:** use the [broken-link issue form](.github/ISSUE_TEMPLATE/broken-link.yml). Include country, resource URL, observed problem and check date. Do not disclose credentials or personal information.
 2. **Suggest a resource:** use the [resource suggestion form](.github/ISSUE_TEMPLATE/resource-suggestion.yml). Identify the primary publisher, jurisdiction, scope and access requirements.
-3. **Add a country:** start from the existing [Country Template](Country%20Template), create a public repository using the seven categories, then open a PR to this index adding the country and maintainer.
+3. **Add a country:** start from the existing [Country Template](Country%20Template), create a public repository using the seven categories, then open a PR to this index adding the country and maintainer, or use the [new-country form](.github/ISSUE_TEMPLATE/new-country.yml).
 4. **Correct an existing country:** open a PR against the country repository; if it is no longer maintained, open a discussion or issue here.
-5. **Improve the site or docs:** open a focused PR explaining the change and how you checked it.
+5. **Improve the site or docs:** report site problems with the [website bug form](.github/ISSUE_TEMPLATE/website-bug.yml), or open a focused PR explaining the change and how you checked it.
 
 ## Contribution checklist
 

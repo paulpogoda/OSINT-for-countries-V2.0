@@ -1,0 +1,23 @@
+name: Website bug
+description: Problem with the interactive directory (search, filters, missing country, display).
+title: "[Site] <short description>"
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Page URL
+      description: Include the query string if filters were applied.
+      placeholder: https://provereno-media.github.io/OSINT-for-countries-V2.0/?q=...
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened and what you expected
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      placeholder: Firefox 131, Android

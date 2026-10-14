@@ -1,0 +1,50 @@
+name: Broken or changed resource
+description: Report a resource that is unreachable, moved, paywalled or no longer matches its description.
+title: "[Broken link] <Country>: <resource name>"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include credentials, personal data or screenshots containing them.
+  - type: input
+    id: country
+    attributes:
+      label: Country
+      placeholder: Kazakhstan
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Resource URL
+      description: The link exactly as listed.
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: Problem
+      options:
+        - Unreachable (error, timeout, DNS)
+        - Redirects elsewhere or domain changed owner
+        - Now requires registration, payment or local access
+        - Content no longer matches the description
+        - Possibly malicious or impersonating the original
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What you observed
+      description: Error message, new URL if known, and from which country/network you checked (geo-blocking is common).
+    validations:
+      required: true
+  - type: input
+    id: checked
+    attributes:
+      label: Date checked
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true

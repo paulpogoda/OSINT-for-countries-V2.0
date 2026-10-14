@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Change a resource in an existing country list
+    url: https://github.com/Provereno-Media/OSINT-for-countries-V2.0#browse-countries
+    about: Country lists live in separate repositories. Open the issue or PR in that country's repository.
