@@ -187,7 +187,7 @@ We welcome contributions to country lists, new country collections, corrections,
 
 ## Data and API
 
-The interactive site currently references an [`import-report.json`](https://provereno-media.github.io/OSINT-for-countries-V2.0/import-report.json) status report, also used by the country/resource badges. See [DATA.md](docs/DATA.md) for the distinction between documented references and **proposed** data exports. No stable public API is promised here.
+Each site build publishes [`resources.json`](https://provereno-media.github.io/OSINT-for-countries-V2.0/resources.json) (the search index) and [`import-report.json`](https://provereno-media.github.io/OSINT-for-countries-V2.0/import-report.json) (coverage report, also used by the badges). See [DATA.md](docs/DATA.md) for their structure. These are build outputs, not a stable public API.
 
 ## Repository presentation
 
