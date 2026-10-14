@@ -7,7 +7,7 @@ import sys
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import quote, urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_INDEX_REPOSITORY = 'Provereno-Media/OSINT-for-countries-V2.0'
@@ -188,17 +188,32 @@ def resources_from_readme(markdown, country, repo_url, candidates=None):
     return resources
 
 
-def fetch_readme(owner, repo):
+def github_get(path, accept='application/vnd.github+json'):
     request = urllib.request.Request(
-        f'https://api.github.com/repos/{owner}/{repo}/readme',
+        'https://api.github.com' + path,
         headers={
-            'Accept': 'application/vnd.github.raw+json',
+            'Accept': accept,
             'User-Agent': 'osint-countries-search-builder',
             **({'Authorization': 'Bearer ' + os.environ['GITHUB_TOKEN']} if os.environ.get('GITHUB_TOKEN') else {}),
         },
     )
     with urllib.request.urlopen(request, timeout=20) as response:
         return response.read().decode('utf-8-sig')
+
+
+def fetch_readme(owner, repo):
+    return github_get(f'/repos/{owner}/{repo}/readme', 'application/vnd.github.raw+json')
+
+
+def readme_updated(owner, repo):
+    """Date of the last commit touching the README (an edit date, not a review date), or None."""
+    try:
+        path = json.loads(github_get(f'/repos/{owner}/{repo}/readme'))['path']
+        commits = json.loads(github_get(f'/repos/{owner}/{repo}/commits?path={quote(path)}&per_page=1'))
+        return commits[0]['commit']['committer']['date'][:10] if commits else None
+    except (OSError, UnicodeError, ValueError, KeyError, IndexError, TypeError) as exc:
+        print(f'WARNING: {owner}/{repo}: README date unavailable: {exc}', file=sys.stderr)
+        return None
 
 
 def build(output):
@@ -221,7 +236,7 @@ def build(output):
                 raise ValueError('No resources recognized in README')
             records.extend(found)
             counts = {category: sum(r['category'] == category for r in found) for category in ORDER}
-            status.append({'country': item['name'], 'repository': repo_url, 'count': len(found), 'categories': counts, 'candidates': len(country_candidates), 'ok': True})
+            status.append({'country': item['name'], 'repository': repo_url, 'count': len(found), 'categories': counts, 'candidates': len(country_candidates), 'readme_updated': readme_updated(item['owner'], item['repo']), 'ok': True})
             candidates.extend(country_candidates)
         except (OSError, UnicodeError, ValueError) as exc:
             print(f"WARNING: {repo_url}: {exc}", file=sys.stderr)
