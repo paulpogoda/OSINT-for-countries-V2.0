@@ -33,6 +33,14 @@ class BadgeTests(unittest.TestCase):
         self.assertEqual(with_badge(markdown, LINE), (markdown, 'missing'))
         self.assertEqual(with_badge(markdown, LINE, insert_missing=True), (f'# OSINT-Tools-Estonia\n{LINE}\nIntro\n', 'inserted'))
 
+    def test_insert_after_introduction_before_first_section(self):
+        markdown = ('# OSINT-Tools-Estonia\n<img src="flag.png" alt="Estonia_FLAG"/>\n'
+                    'A list of OSINT resources. \n\n## Contributions\nJoin\n## Legal Entities\n')
+        updated, action = with_badge(markdown, LINE, insert_missing=True)
+        self.assertEqual(action, 'inserted')
+        self.assertEqual(updated, ('# OSINT-Tools-Estonia\n<img src="flag.png" alt="Estonia_FLAG"/>\n'
+                                   f'A list of OSINT resources.\n\n{LINE}\n\n## Contributions\nJoin\n## Legal Entities\n'))
+
 
 if __name__ == '__main__':
     unittest.main()

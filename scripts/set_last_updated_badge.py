@@ -19,7 +19,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_index import ROOT, countries_from_index
 
 LAST_UPDATED = re.compile(r'^[ \t]*[*_]*[ \t]*last[ \t]+updated[ \t]*[*_]*[ \t]*:.*$', re.I | re.M)
-HEADING = re.compile(r'^#[ \t]+.*$', re.M)
+TITLE = re.compile(r'^#[ \t]+.*$', re.M)
+SECTION = re.compile(r'^#{2,6}[ \t]+', re.M)
 BADGE_MARK = 'img.shields.io/github/last-commit/'
 COMMIT_MESSAGE = 'Replace manual Last Updated date with last-commit badge'
 
@@ -34,9 +35,14 @@ def with_badge(markdown, line, insert_missing=False):
         return markdown, 'present'
     if LAST_UPDATED.search(markdown):
         return LAST_UPDATED.sub(lambda _: line, markdown, count=1), 'replaced'
-    heading = HEADING.search(markdown)
-    if insert_missing and heading:
-        return markdown[:heading.end()] + '\n' + line + markdown[heading.end():], 'inserted'
+    if insert_missing:
+        # Template position: after the title and introduction, before the first section.
+        section = SECTION.search(markdown)
+        if section:
+            return markdown[:section.start()].rstrip() + '\n\n' + line + '\n\n' + markdown[section.start():], 'inserted'
+        title = TITLE.search(markdown)
+        if title:
+            return markdown[:title.end()] + '\n' + line + markdown[title.end():], 'inserted'
     return markdown, 'missing'
 
 
