@@ -56,7 +56,7 @@ See the [category definitions](STANDARD.md#categories) for scope, inclusion rule
 
 ## Browse Countries
 
-The index currently lists **53 country repositories**. Inclusion means the repository is indexed—not that every resource has recently been reviewed. **Last reviewed** records an explicit content audit, not a commit date. Dates are unrecorded until maintainers supply evidence; see [Country freshness](STANDARD.md#country-status-and-freshness).
+The index currently lists **55 country repositories**. Inclusion means the repository is indexed—not that every resource has recently been reviewed. **Last reviewed** records an explicit content audit, not a commit date. Dates are unrecorded until maintainers supply evidence; see [Country freshness](STANDARD.md#country-status-and-freshness).
 
 **Jump to:** [Africa](#africa) · [Americas](#americas) · [Asia-Pacific](#asia-pacific) · [Central Asia](#central-asia) · [Europe](#europe) · [Middle East](#middle-east) · [South Caucasus](#south-caucasus) · [Eastern Europe & Eurasia](#eastern-europe--eurasia) · [South & West Asia](#south--west-asia)
 
@@ -98,6 +98,7 @@ The index currently lists **53 country repositories**. Inclusion means the repos
 
 | Country | Maintainer | Status | Last reviewed |
 |---|---|---|---|
+| 🇦🇹 [Austria](https://github.com/Provereno-Media/OSINT-Tools-Austria) | @provereno-media | 📌 Listed | Not recorded |
 | 🇧🇪 [Belgium](https://github.com/Provereno-Media/OSINT-Tools-Belgium) | @provereno-media | 📌 Listed | Not recorded |
 | 🇧🇬 [Bulgaria](https://github.com/paulpogoda/OSINT-Tools-Bulgaria/tree/main) | @paulpogoda | 📌 Listed | Not recorded |
 | 🇭🇷 [Croatia](https://github.com/Provereno-Media/OSINT-Tools-Croatia) | @provereno-media | 📌 Listed | Not recorded |
@@ -151,6 +152,7 @@ The index currently lists **53 country repositories**. Inclusion means the repos
 | 🇧🇾 [Belarus](https://github.com/paulpogoda/OSINT-Tools-Belarus) | @paulpogoda | 📌 Listed | Not recorded |
 | 🇲🇩 [Moldova](https://github.com/SosoPkhakadze/OSINT-Tools-Moldova) | @SosoPkhakadze | 📌 Listed | Not recorded |
 | 🇷🇺 [Russia](https://github.com/paulpogoda/OSINT-Tools-Russia) | @paulpogoda | 📌 Listed | Not recorded |
+| 🇺🇦 [Ukraine](https://github.com/Provereno-Media/OSINT-Tools-Ukraine) | @provereno-media | 📌 Listed | Not recorded |
 
 ### South & West Asia
 
