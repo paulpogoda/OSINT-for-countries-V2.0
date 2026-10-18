@@ -103,7 +103,7 @@ The index currently lists **55 country repositories**. Inclusion means the repos
 | 🇧🇬 [Bulgaria](https://github.com/paulpogoda/OSINT-Tools-Bulgaria/tree/main) | @paulpogoda | 📌 Listed | Not recorded |
 | 🇭🇷 [Croatia](https://github.com/Provereno-Media/OSINT-Tools-Croatia) | @provereno-media | 📌 Listed | Not recorded |
 | 🇩🇰 [Denmark](https://github.com/Provereno-Media/OSINT-Tools-Denmark) | @provereno-media | 📌 Listed | Not recorded |
-| 🇪🇪 [Estonia](https://github.com/paulpogoda/OSINT-Tools-Estonia) | @paulpogoda | 📌 Listed | Not recorded |
+| 🇪🇪 [Estonia](https://github.com/Provereno-Media/OSINT-Tools-Estonia) | @paulpogoda | 📌 Listed | Not recorded |
 | 🇫🇮 [Finland](https://github.com/Provereno-Media/OSINT-Tools-Finland) | @provereno-media | 📌 Listed | Not recorded |
 | 🇫🇷 [France](https://github.com/Aegyr21/OSINT-Tools-France/) | @Aegyr21 | 📌 Listed | Not recorded |
 | 🇩🇪 [Germany](https://github.com/Provereno-Media/OSINT-Tools-Germany) | @provereno-media | 📌 Listed | Not recorded |
